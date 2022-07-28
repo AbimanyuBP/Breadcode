@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --mainOrange: #ff8a28;
+  --hoverBtn: #ff9e4d;
+  --homeOrange: #ffe19c;
+  --mainBlack: #000000;
+  --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --allBg: #f3f4f5;
+  --aboxshadow: rgba(255, 91, 15, 0.4) 5px 5px, rgba(255, 91, 15, 0.3) 10px 10px, rgba(255, 91, 15, 0.2) 15px 15px, rgba(255, 91, 15, 0.1) 20px 20px, rgba(255, 91, 15, 0.05) 25px 25px;
+  --fboxshadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body {
+  font-family: "Mali", cursive;
+}
+
+* {
+  list-style: none;
+}
+
+/*
+.row {
+  margin: 0 auto;
+}
+
+.kanan {
+  background-color: var(--allBg);
+}
+
+.dropdown {
+} */
+
+main {
+  display: flex;
+}
+
+.kiri {
+  width: 20vw;
+  /* height: 100vh; */
+}
+
+.kanan {
+  width: 80vw;
+  background-color: var(--allBg);
+  height: 100vh;
+}
+
+.btn-materi {
+  background-color: var(--mainOrange);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 18px auto;
+  width: 70%;
+  padding: 10px 20px;
+  box-shadow: var(--boxshadow);
+}
+
+.btn-materi a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-materi:hover {
+  transition: 0.3s all;
+  background-color: var(--hoverBtn);
+}
+
+.kanan {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: var(--boxshadow);
+}
+
+.card-profile {
+  display: flex;
+}
+
+.nama-profile {
+  align-self: center;
+}
+
+.kanan-kotak {
+  bottom: 0;
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.kanan-kotak textarea {
+  margin-top: 50px;
+  resize: none;
+  box-shadow: var(--boxshadow);
+  border-radius: 10px;
+  background-color: white;
+  width: 83%;
+  height: 100px;
+  padding: 10px;
+  border: none;
+}
+
+.kanan-kotak textarea:focus {
+  outline: none;
+}
+
+.btn-tanya {
+  background-color: var(--mainOrange);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 18px auto;
+  /* width: 20%; */
+  padding: 10px 20px;
+  box-shadow: var(--boxshadow);
+}
+
+.btn-tanya a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-tanya:hover {
+  transition: 0.3s all;
+  background-color: var(--hoverBtn);
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.materi-belom {
+  background-color: var(--hoverBtn);
+}
+
+.arrow {
+  color: var(--mainBlack);
+}
+
+.arrow:hover {
+  transition: 0.3s all;
+  opacity: 0.8;
+  color: var(--mainBlack);
+}

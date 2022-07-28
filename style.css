@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --mainOrange: #ff8a28;
+  --hoverBtn: #ff9e4d;
+  --homeOrange: #ffe19c;
+  --mainBlack: #000000;
+  --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --allBg: #f3f4f5;
+  --aboxshadow: rgba(255, 91, 15, 0.4) 5px 5px, rgba(255, 91, 15, 0.3) 10px 10px, rgba(255, 91, 15, 0.2) 15px 15px, rgba(255, 91, 15, 0.1) 20px 20px, rgba(255, 91, 15, 0.05) 25px 25px;
+  --fboxshadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body {
+  font-family: "Mali", cursive;
+}
+
+.btn-logins {
+  background-color: var(--mainOrange);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 20px;
+  box-shadow: var(--boxshadow);
+}
+
+.btn-logins a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-logins:hover {
+  transition: 0.3s all;
+  background-color: var(--hoverBtn);
+}
+
+.navbar-nav {
+  margin-right: 10px;
+}
+
+.nav-item {
+  margin: 10px 20px;
+}
+
+.nav-menu {
+  color: black;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.nav-menu:hover {
+  transition: 0.3s all;
+  color: var(--mainOrange);
+}
+
+nav.scrolled {
+  transition: 0.5s all;
+  background: #fffefe;
+}
+
+/* hero */
+.hero {
+  background-color: var(--homeOrange);
+  padding-top: 170px;
+  height: 650px;
+}
+
+.container.heroo {
+  /* margin-bottom: 65px; */
+}
+
+.container.heroo img {
+  border-radius: 10px;
+  box-shadow: var(--fboxshadow);
+}
+
+svg {
+  background-color: var(--allBg);
+}
+
+/* fiture */
+.fitur-desktop {
+  background-color: var(--allBg);
+}
+
+.fitur-desktop img {
+  box-shadow: var(--fboxshadow);
+}
+
+.materi {
+  margin-top: -100px;
+}
+
+.fitur-space {
+  padding: 70px 0;
+}
+
+/* about */
+.about {
+  background-color: var(--homeOrange);
+  /* height: 700px; */
+  box-shadow: var(--fboxshadow);
+}
+
+.card {
+  border: none;
+  outline: none;
+  width: 80%;
+  overflow: hidden;
+  box-shadow: var(--fboxshadow);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: 0.6s all;
+  box-shadow: var(--aboxshadow);
+}
+
+.card img {
+  width: 120px;
+}
+
+.card-body img {
+  width: 25px;
+}
+
+.atas {
+  background-color: #ff784f;
+  padding: 50px;
+  /* position: relative; */
+}
+
+.isi {
+  z-index: 1;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sosmed {
+  /* margin-top: 50px; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sosmed img:hover {
+  margin-top: -5px;
+  opacity: 0.85;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  background-color: var(--homeOrange);
+}
+
+/* ngapus mobile di desktop */
+.hero-img-mobile {
+  display: none;
+}
+
+.fitur-mobile {
+  display: none;
+}
+
+.journey {
+  display: none;
+}
+
+.aboutus-mobile {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+  #navbarNav {
+    margin: 0px -13px 0 -13px;
+    background-color: #fffefe;
+  }
+
+  .navbar-nav {
+    text-align: right;
+  }
+
+  .btn-logins {
+    margin-right: 42px;
+    float: right;
+  }
+
+  .hero {
+    margin-top: -50px;
+  }
+
+  .teks-isi {
+    display: none;
+  }
+
+  .hero-img-desktop {
+    display: none;
+  }
+
+  .btn-hero-desktop {
+    display: none;
+  }
+
+  .hero-img-mobile {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .journey {
+    display: block;
+  }
+
+  .container.journey {
+    background-color: var(--allBg);
+    padding-bottom: 100px;
+    /* height: 1000px; */
+  }
+
+  .btn-logins.btn-hero-mobile {
+    float: none;
+    margin: 0 33.33%;
+  }
+
+  /* gitur */
+  .fitur-desktop {
+    display: none;
+  }
+
+  .fitur-mobile {
+    display: block;
+    background-color: var(--allBg);
+  }
+
+  /* about us */
+  .aboutus-desktop {
+    display: none;
+  }
+
+  .aboutus-mobile {
+    display: flex;
+  }
+
+  .aboutus-mobile p {
+    font-size: 13px;
+  }
+
+  .card img {
+    margin: 10px auto;
+    width: 100px;
+  }
+
+  .hotlink {
+    justify-content: center;
+    background-color: gray;
+  }
+
+  .hotlink {
+    display: none;
+    animation: dobleh 1s ease-in;
+  }
+
+  @keyframes dobleh {
+    from {
+      opacity: 0;
+      margin-top: -50px;
+    }
+
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
+
+  .hotlink img {
+    width: 20px;
+  }
+}

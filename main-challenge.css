@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --mainOrange: #ff8a28;
+  --hoverBtn: #ff9e4d;
+  --homeOrange: #ffe19c;
+  --mainBlack: #000000;
+  --boxshadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  --allBg: #f3f4f5;
+  --aboxshadow: rgba(255, 91, 15, 0.4) 5px 5px, rgba(255, 91, 15, 0.3) 10px 10px, rgba(255, 91, 15, 0.2) 15px 15px, rgba(255, 91, 15, 0.1) 20px 20px, rgba(255, 91, 15, 0.05) 25px 25px;
+  --fboxshadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+body {
+  background-color: var(--allBg);
+  font-family: "Mali", cursive;
+}
+
+.img-1 {
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  z-index: 98;
+}
+
+.img-2 {
+}
+
+.dropdown {
+  z-index: 99;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  box-shadow: var(--boxshadow);
+}
+
+.container {
+  /* margin-left: 126px; */
+}
+
+.row {
+  margin-right: 10px;
+}
+
+.chal1 {
+  margin-top: 150px;
+}
+
+.infomamen {
+  /* margin-right: 25%; */
+  /* margin-left: 25%; */
+  margin: 0 auto;
+  width: 300px;
+  background-color: white;
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  opacity: 0.7;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.infomamen p {
+  padding: 10px;
+}
+
+.logochal {
+  width: 300px;
+}
+
+.ez {
+  width: 90px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.judul {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.real {
+  opacity: 1;
+}
+
+.konten {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
